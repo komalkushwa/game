@@ -1,0 +1,109 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			body{
+				align-items: center;
+                text-align: center;
+
+                background:linear-gradient(to bottom left,coral,chocolate,burlywood);
+                background-repeat: no-repeat;
+                height: 150vh;
+            }
+            h1{
+            	font-size: 50px;
+            }
+            h2{
+            	font-size: 40px;
+
+            }
+            hr{
+            	width: 200px;
+            	height: 4px;
+            	margin-top: -20px;
+            }
+            input{
+            	margin-top: 30px;
+            	width: 200px;
+            	height: 30px;
+            	border: 3px solid brown;
+            	color: brown;
+            	font-weight: bold;
+            	background: beige;
+            }
+            button{
+            	margin-left: 20px;
+            	border: 3px solid brown;
+            	background-color: beige;
+            	border-radius: 10px;
+            }
+           img{
+            	
+            	width: 800px;
+            	height: 800px;
+            	position: relative;
+          
+            }
+
+            
+			@media only screen and (min-width: 300px) and (max-width: 500px)
+            {
+            	img{
+            		width: 400px;
+            		height: 400px;
+            	}
+            }
+            @media only screen and (min-width: 500px) and (max-width: 800px)
+            {
+                  body{
+            		background-size: 100%;
+            
+            	}
+            }
+		</style>
+	</head>
+	<body>
+
+		<div id=txt>
+			<div class="first">
+				<h1>Mind Freshning Game !!</h1>
+				<h2>Let's Try</h2>
+				<hr color="brown"></hr>
+				<input type="text" name="" id="item" placeholder="Enter your number">
+				<button onclick="submit();">Submit</button>
+		    </div>
+		</div>
+		
+	
+		
+		<script type="text/javascript">
+	document.getElementById("item").innerHTML= Math.floor(Math.random()*4+1);
+	  let num2= Math.floor(Math.random()*4+1);
+			//var num=getElementById("txt");
+
+			function submit() {
+				// body...
+				let num =item.value;
+			if(num == num2){
+
+					document.getElementById("abc").style.visibility="visible";
+			
+
+			}
+			else{
+				alert("Oops..Plzz Try again");
+			}
+		}
+
+		</script>
+		
+		<img  src="file:///C:/Users/MAHAKAAL/Downloads/party2-removebg-preview.png"
+		 id="abc" style="visibility: hidden;">
+
+	
+	</body>
+	</html>
